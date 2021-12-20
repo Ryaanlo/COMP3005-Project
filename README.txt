@@ -2,8 +2,8 @@ Comp 3005 - Project
 Daniel Lawrence
 Ryan Lo
 
-Begin by opening postgresql and creating a database named "Project".
-Use the query tool to run the DDL.sql in the SQL folder.
+Begin by opening and launching postgresql and creating a database named "Project".
+Use the query tool to run the DDL.sql provided in the SQL folder.
 Compile the Project_main.java file and run it.
 Upon launching, the program will ask you to Login or Create an account.
 Creating an Account will always cause the user to not be an Owner.
