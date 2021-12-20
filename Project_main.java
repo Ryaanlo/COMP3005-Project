@@ -110,7 +110,7 @@ public class Project_main {
             }
 
             try (Connection conn = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/Project",
+                    "jdbc:postgresql://localhost:5432/" + database,
                     userid, passwd)) {
                 try (Statement stmt = conn.createStatement()) {
                     try {
@@ -544,7 +544,7 @@ public class Project_main {
 
     public static boolean CheckoutAddCheck(){
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 ResultSet rset = stmt.executeQuery(
@@ -593,7 +593,7 @@ public class Project_main {
                 }
 
                 try (Connection conn = DriverManager.getConnection(
-                        "jdbc:postgresql://localhost:5432/Project",
+                        "jdbc:postgresql://localhost:5432/" + database,
                         userid, passwd)) {
                     try (Statement stmt = conn.createStatement()) {
                         try {
@@ -638,7 +638,7 @@ public class Project_main {
         }
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 ResultSet rset = stmt.executeQuery(
@@ -730,7 +730,7 @@ public class Project_main {
         }
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 ResultSet rset = stmt.executeQuery(
@@ -806,6 +806,7 @@ public class Project_main {
             System.out.println("Exception: " + sqle);
         }
         System.out.println("Successfully ordered new books");
+        Welcome();
     }
 
     public static void NewBook(){
@@ -902,7 +903,7 @@ public class Project_main {
         }
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 ResultSet rset = stmt.executeQuery(
@@ -941,7 +942,7 @@ public class Project_main {
         }
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 ResultSet rset = stmt.executeQuery(
@@ -1243,7 +1244,7 @@ public class Project_main {
         }
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/Project",
+                "jdbc:postgresql://localhost:5432/" + database,
                 userid, passwd)) {
             try (Statement stmt = conn.createStatement()) {
                 int totalAuthor = 0;
