@@ -4,7 +4,8 @@ Ryan Lo
 
 Begin by opening and launching postgresql and creating a database named "Project".
 Use the query tool to run the DDL.sql provided in the SQL folder.
-Compile the Project_main.java file and run it.
+Compile the Project_main.java file and run the program.
+
 Upon launching, the program will ask you to Login or Create an account.
 Creating an Account will always cause the user to not be an Owner.
 Logging in with an Owner Account (ex. Username: "Daniel", Password: "Lawrence") will allow you to order more books and Generate Reports.
