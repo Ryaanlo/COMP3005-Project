@@ -4,6 +4,7 @@ Ryan Lo
 
 Begin by opening and launching postgresql and creating a database named "Project".
 Use the query tool to run the DDL.sql provided in the SQL folder.
+Set the userid and passwd variable to your own postgre userid and pasword on Line 10 and 11 in Project_main.java.
 Compile the Project_main.java file and run the program.
 
 Upon launching, the program will ask you to Login or Create an account.
